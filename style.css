@@ -51,7 +51,7 @@ input {
     box-shadow: 0 10px 10px 0 rgba(60,64,67,.1);
 }
 
-.fas {
+.fas, .far {
     margin-right: 8px;
 }
 
@@ -205,6 +205,7 @@ input {
 
 .movie-metadata {
     font-size: 12px;
+    margin: 8px 0;
 }
 
 .movie-metadata-item {
