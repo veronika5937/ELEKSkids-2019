@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="style.css">
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Andika&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/d685a2a4f0.js" crossorigin="anonymous"></script>
 	<title>OutdoorFilm</title>
@@ -19,6 +19,7 @@
 				<i class="fas fa-film"></i> OutdoorFilm
 			</h1>
 	
+			<i class="fas fa-bars" id="menu-icon" role="button"></i>
 			<nav class="navigation">
 				<a href="#about" class="navigation-item">Про нас</a>
 				<a href="#movies" class="navigation-item">Фільми</a>
@@ -27,27 +28,55 @@
 		</div>
 	</header>
 	<main>
+		<!-- BUNNER SECTION -->
 		<section class="banner">
 			<div class="main-wrapper">
 				<div class="banner-wrapper">
 					<h2 class="banner-title">
 						<b class="banner-title-accent">Кіно</b> просто неба у Стрийському парку
 					</h2>
-					<p class="banner-txt">Pесурс подачі оголошень про безкоштовний перегляд фільмів під відкритим небом, що дозволяє глядачам самим обирати що і коли дивитись.</p>
+					<p class="banner-txt">Дошка оголошень безкоштовних кінопоказів під відкритим небом,<br> для справжніх львівських кіноманів</p>
 					<button class="banner-btn">Запропонувати фільм</button>
 				</div>
 			</div>
 		</section>
 		<!-- ABOUT SECTION -->
-		<section id="about">
-			<h2>Про нас</h2>
+		<section id="about" class="main-section">
+			<div class="main-wrapper">
+				<h2 class="main-section-title">Як це працює</h2>
 
+				<div class="row">
+					<div class="about-item">
+						<i class="fas fa-photo-video about-icon"></i>
+						<h3 class="about-item-title">	Обирай сам що і коли дивитись</h3>
+					</div>
+	
+					<div class="about-item">
+						
+						<i class="fas fa-ticket-alt about-icon"></i>
+						<h3 class="about-item-title">Бронюй міся та запрошуй друзів</h3>
+					</div>
+	
+					<div class="about-item">
+						
+						<i class="fas fa-glasses about-icon"></i>
+						<h3 class="about-item-title">Насолоджуйся переглядом</h3>
+					</div>
+	
+					<div class="about-item">
+						<i class="fas fa-shoe-prints about-icon"></i>
+						<h3 class="about-item-title">Приходь ще</h3>
+					</div>
+				</div>
+			
+
+			</div>
 		</section>
 
 		<!-- MOVIES SECTION -->
-		<section id="movies">
-			<h2>Фільми</h2>
-			<div class="row">
+		<section id="movies" class="main-section">
+			<h2 class="main-section-title">Фільми</h2>
+			<div class="row main-wrapper">
 				<article class="contacts col movie-item">
 					<iframe width="100%" height="300" src="https://www.youtube.com/embed/EPOa3WBTpgc"></iframe>
 					<div class="movie-info">
@@ -58,13 +87,13 @@
 							</time>
 						</header>
 
-						<div class="movie-metadata">
-							<time datetime="2016" class="movie-metadata-item">2009</time>
-							<span class="movie-metadata-item">
+						<div>
+							<time datetime="2016" class="movie-metadata">2009</time>
+							<span class="movie-metadata">
 								<small class="movie-maturity">14+</small>
 							</span>
-							<span class="movie-metadata-item">1:37</span>
-							<span class="movie-metadata-item">Комедія</span>
+							<span class="movie-metadata">1:37</span>
+							<span class="movie-metadata">Комедія</span>
 						</div>
 						<p class="movie-description">
 							Карл Ален прагне змінити своє життя і застосовує для цього простий метод - відповідати "так" на всі питання. Життя Карла
@@ -85,13 +114,13 @@
 							</time>
 						</header>
 
-						<div class="movie-metadata">
-							<time datetime="2016" class="movie-metadata-item">2016</time>
-							<span class="movie-metadata-item">
+						<div>
+							<time datetime="2016" class="movie-metadata">2016</time>
+							<span class="movie-metadata">
 								<small class="movie-maturity">13+</small>
 							</span>
-							<span class="movie-metadata-item">1:37</span>
-							<span class="movie-metadata-item">Мультфільм</span>
+							<span class="movie-metadata">1:37</span>
+							<span class="movie-metadata">Мультфільм</span>
 						</div>
 						<p class="movie-description">
 							Зоотрополіс — сучасне місто, населене антропоморфними тваринами. Тварини у світі Зоотрополісі колись були дикими,
@@ -111,13 +140,13 @@
 								<i class="far fa-calendar-alt"></i>2019-07-12 19:00
 							</time>
 						</header>
-						<div class="movie-metadata">
-							<time datetime="2016" class="movie-metadata-item">2019</time>
-							<span class="movie-metadata-item">
+						<div>
+							<time datetime="2016" class="movie-metadata">2019</time>
+							<span class="movie-metadata">
 								<small class="movie-maturity">6+</small>
 							</span>
-							<span class="movie-metadata-item">1:37</span>
-							<span class="movie-metadata-item">Мультфільм</span>
+							<span class="movie-metadata">1:37</span>
+							<span class="movie-metadata">Мультфільм</span>
 						</div>
 						<p class="movie-description">
 							Анна, Ельза, Крістоф, його вірний олень Свен і завжди радісний сніговик Олаф повинні будуть покинути королівство
@@ -138,13 +167,13 @@
 								<i class="far fa-calendar-alt"></i>2019-07-12 19:00
 							</time>
 						</header>
-						<div class="movie-metadata">
-							<time datetime="2016" class="movie-metadata-item">2019</time>
-							<span class="movie-metadata-item">
+						<div>
+							<time datetime="2016" class="movie-metadata">2019</time>
+							<span class="movie-metadata">
 								<small class="movie-maturity">12+</small>
 							</span>
-							<span class="movie-metadata-item">1:37</span>
-							<span class="movie-metadata-item">Фантастика, Бойовик</span>
+							<span class="movie-metadata">1:37</span>
+							<span class="movie-metadata">Фантастика, Бойовик</span>
 						</div>
 						<p class="movie-description">
 							Пітер Паркер (Том Голланд) вирушає на літні канікули до Європи разом зі своїми однокласниками. Та забути про свої здібності,
@@ -166,13 +195,13 @@
 							</time>
 						</header>
 
-						<div class="movie-metadata">
-							<time datetime="2016" class="movie-metadata-item">2019</time>
-							<span class="movie-metadata-item">
+						<div>
+							<time datetime="2016" class="movie-metadata">2019</time>
+							<span class="movie-metadata">
 								<small class="movie-maturity">0+</small>
 							</span>
-							<span class="movie-metadata-item">1:37</span>
-							<span class="movie-metadata-item">Комедія, Драма</span>
+							<span class="movie-metadata">1:37</span>
+							<span class="movie-metadata">Комедія, Драма</span>
 						</div>
 						<p class="movie-description">
 							За життям водія гоночного автомобіля Денні Свіфта (Майло Вентімілья) уважно спостерігає його хатній улюбленець. Очима пса
@@ -188,7 +217,7 @@
 	</main>
 	<footer class="main-footer">
 		<div class="main-wrapper row">
-			<section class="col"  id="contacts">
+			<section class="col main-footer-item"  id="contacts">
 				<h4 class="col-heading">Контакти</h4>
 
 				<address>
@@ -201,7 +230,6 @@
 					<i class="fas fa-envelope fa-2x"></i>
 					outdoor_movie@gmail.com
 				</a>
-
 				<a class="contacts-item" href="tel:+380676482975">
 					<i class="fas fa-phone-alt fa-2x"></i>
 					+38 (067) 648-29-75
@@ -209,7 +237,7 @@
 
 			</section>
 
-			<section class="social col">
+			<section class="col main-footer-item">
 				<h4 class="col-heading">Слідкуй за нами</h4>
 				<a target="_blank" class="social-item" href="https://www.youtube.com">
 					<i class="fab fa-youtube fa-3x"></i>
@@ -222,13 +250,13 @@
 				</a>
 			</section>
 
-			<section class="subscribe col">
+			<section class="col main-footer-item">
 				<h4 class="col-heading">Підпишись</h4>
 				<input type="mail" placeholder="Електронна пошта">
 				<button class="main-btn">Підпишись</button>
 			</section>
 		</div>
-		<small class="copyright">© Всі права захищено ELEKS kids, 2019</small>
+		<small class="copyright main-footer-item">© Всі права захищено ELEKS kids, 2019</small>
 	</footer>
 </body>
 

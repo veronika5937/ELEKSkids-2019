@@ -1,9 +1,10 @@
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
 * {
 	box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h6 {
-    margin: 0;
 }
 
 html {
@@ -13,7 +14,7 @@ html {
 body {
     margin: 0;
     font-family: 'Andika', sans-serif;
-    color: rgb(45, 45, 45);
+    color: rgb(121, 114, 110);
     background: #EDEDED url('./images/grass.jpg') repeat-x bottom;
 }
 
@@ -57,7 +58,7 @@ input {
 
 .main-btn {
     box-shadow: 0 10px 10px 0 rgba(60,64,67,.1);
-    background-color: #2D5B04;
+    background-color: #3E9663; 
     color: white;
 }
 
@@ -75,14 +76,19 @@ input {
 }
 
 .main-wrapper {
-	width: 85%;
+    width: 90%;
 	max-width: 1400px;
 	margin: 0 auto;
 }
 
-.main-footer {
+.main-section {
     padding: 24px 0;
-    color: rgb(121, 114, 110);
+}
+
+.main-section-title {
+    color: #3E9663;
+    text-align: center;
+    letter-spacing: 3px;
 }
 
 .row {
@@ -92,15 +98,9 @@ input {
 }
 
 .col {
-    flex: 1 0 auto;
+    flex: 1 0 320px;
     max-width: 400px;
     margin: 16px;
-}
-
-.copyright {
-    display: block;
-    text-align: center;
-    color: white;
 }
 
 .col-heading {
@@ -111,10 +111,6 @@ input {
 }
 
 /* NAVIGATION */
-.navigation {
-    
-}
-
 .navigation-item {
     padding: 6px 16px 8px;
     font-weight: 600;
@@ -129,7 +125,10 @@ input {
 .logo {
     display: flex;
     align-items: center;
-    padding: 16px 0;
+}
+
+#menu-icon {
+    display: none;
 }
 
 /* BANNER */
@@ -167,6 +166,27 @@ input {
 }
 
 /* ABOUT */
+.about-item {
+    flex: 1 0 200px;
+    text-align: center;
+    padding: 24px;
+}
+
+.about-icon {
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius:50%;
+    font-size: 48px;
+    background: rgba(62, 150, 99, 0.3);
+    color: #EDEDED;
+    box-shadow: 0 30px 60px rgba(68,68,68,0.3);
+}
+
+.about-item-title {
+    padding: 16px 0;
+    border-top: 1px solid rgba(62, 150, 99, 0.5);
+    font-weight: normal;
+}
 
 /* Movies Section */
 .movie-item {
@@ -181,7 +201,7 @@ input {
 }
 
 .movie-date {
-   color: #2D5B04;
+   color: #3E9663
 }
 
 .movie-item:hover {
@@ -191,7 +211,6 @@ input {
 
 .movie-info {
     padding: 8px 18px 24px;
-    color: rgb(121, 114, 110);
     height: calc(100% - 300px);
     display: flex;
     flex-direction: column;
@@ -204,15 +223,11 @@ input {
 }
 
 .movie-metadata {
-    font-size: 12px;
-    margin: 8px 0;
-}
-
-.movie-metadata-item {
     padding: 0 4px;
+    font-size: 12px;
 }
 
-.movie-metadata-item + .movie-metadata-item {
+.movie-metadata + .movie-metadata {
     border-left: 1px solid rgba(0,0,0,0.5);
 }
 
@@ -220,12 +235,22 @@ input {
     flex-grow: 1;
     letter-spacing: 0.3px;
     line-height: 1.4;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .movie-info .main-btn{
     margin: 0 auto;
 }
+
+/***************** FOOTER ***************/
+.main-footer {
+    padding: 24px 0;
+}
+
+.main-footer-item {
+    text-align: center;
+}
+
 
 /* CONTACTS */
 .contacts-item {
@@ -233,22 +258,38 @@ input {
     margin-bottom: 16px; 
 }
 
-/* SOCIAL */
-.social {
-    text-align: center;
+.contacts-item:hover {
+    color: #3E9663;
 }
 
+/* SOCIAL */
 .social-item {
     margin: 16px;
 }
 
 .social-item:hover {
-    color: #2D5B04;
+    color: #3E9663;
 }
 
-/* SUBSCRIBE */
-.subscribe {
-    text-align: center;
+.copyright {
+    display: block;
+    color: white;
+}
+
+
+/* ************
+MEDIA QUERY 
+**************/
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+    }
+
 }
   
-
+ 
