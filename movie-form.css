@@ -1,0 +1,33 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.add-form {
+    padding: 16px;
+}
+
+.add-form-title {
+    text-align: center;
+    color: #3E9663;
+}
+
+.add-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.add-form-item {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+.main-btn {
+    display: block;
+    margin: 0 auto;
+}

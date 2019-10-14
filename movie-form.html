@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="movie-form.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie form</title>
+</head>
+<body>
+    <form class="add-form">
+        <h1 class="add-form-title">Форма створення оголошення</h1>
+
+        <div  class="add-form-wrapper">
+            <iframe class="add-form-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            <textarea placeholder="Короткий опис сюжету..." rows="10" class="add-form-item"></textarea>
+        </div>
+
+        <div class="add-form-wrapper">
+            <label class="add-form-item">
+                Посилання на YouTybe
+                <input type="text" placeholder="https://www.youtube.com/embed/EPOa3WBTpgc">
+            </label>
+        </div>
+
+        <div class="add-form-wrapper">
+            <div class="add-form-item">
+                <label for="name">Назва фільму</label>
+                <input type="text" id="name" placeholder="Test" required>
+            </div>
+    
+            <div class="add-form-item">
+                <label for="age">Вікові обмеження</label>
+                <input type="number" placeholder="16" id="age" min="1" max="18" required>
+            </div>
+
+            <div class="add-form-item">
+                <label for="year">Рік виходу фільму</label>
+                <input type="number" id="year" placeholder="2019" min="1800" max="2020" required>
+            </div>
+        </div>
+
+       
+
+        <div class="add-form-wrapper">
+            <div  class="add-form-item">
+                <label for="date">Дата</label>
+                <input type="date" id="date" required>
+            </div>
+            
+            <div class="add-form-item">
+                <label for="time">Час</label>
+                <input type="time" id="time" required>
+            </div>
+    
+            <div class="add-form-item">
+                <label for="duration">Тривалість фільму</label>
+                <input type="time" placeholder="1:20" id="duration" required>
+            </div>
+        </div>
+
+
+        
+
+        <button class="main-btn">Опублікувати</button>
+    </form>
+</body>
+</html>
