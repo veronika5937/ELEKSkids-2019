@@ -282,12 +282,30 @@ MEDIA QUERY
 **************/
 
 @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
-
     .navigation {
         display: none;
+    }
+
+    #menu-icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 16px;
+        margin: 0;
+    }
+
+    .menu-open {
+        background: rgba(62, 150, 99, 0.6);
+    }
+
+    .menu-open ~ .navigation {
+        position: absolute;
+        left: 0;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        background: rgba(62, 150, 99, 0.6);
+        width: 100%;
     }
 
 }
